@@ -1,10 +1,10 @@
-def lista_imion(imie : list):
+def names(name : list):
 
   print('Wyświetlanie imion:')
-  for x in imie:
+  for x in name:
     print(x)
 
-
-imiona = ['Karolina', 'Alicja', 'Michał', 'Dominik', 'Weronika']
-lista_imion(imiona)
+if __name__ == '__main__':
+    example = ['Karolina', 'Alicja', 'Michał', 'Dominik', 'Weronika']
+    names(example)
 

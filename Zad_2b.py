@@ -1,18 +1,21 @@
-def mnozenie(liczba:list):
-    pomnozone = []
-    for x  in liczba:
-        nowaliczba=x*2
-        pomnozone.append(nowaliczba)
-    return pomnozone
-
-liczby = [2, 4, 6, 8, 9]
-print(mnozenie(liczby))
+def multiple_v1(number:list) -> list:
+    extralist = []
+    for x  in number:
+        newnumber=x*2
+        extralist.append(newnumber)
+    return extralist
 
 
+def multiple_v2(number:list) -> list:
+    return [x * 2 for x in number]
 
-def pomnoz_przez_dwa(liczba:list):
-    return [x * 2 for x in lista]
 
-liczby = [2, 4, 6, 8, 9]
-wynik = pomnoz_przez_dwa(liczby)
-print(wynik)
+
+
+if __name__ == '__main__':
+#version 1
+    example_v1 = [2, 4, 6, 8, 9]
+    print(multiple_v1(example_v1))
+#version 2
+    example_v2 = [2, 4, 6, 8, 10]
+    print(multiple_v2(example_v2))
