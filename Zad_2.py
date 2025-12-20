@@ -52,9 +52,10 @@ class Order:
         self.order_date = order_date
     def __str__(self):
         books_titles = ", ".join([f"{b.author_name} {b.author_surname}" for b in self.books])
-        return ( f"Order({self.order_date}, employee={self.employee}, "
-                 f"student={self.student}, books=[{books_titles}])"
-                )
+        return ( f"Zamówienie(({self.order_date}),\n"
+                 f"employee={self.employee},\n"
+                 f"student={self.student},\n"
+                 f"books=[{books_titles}])")
 
 library1 = Library("Katowice", "Plac Rady Europy 1", "40-021", "08:00-20:00", "32 208 37 40")
 library2 = Library("Gliwice", "Kościuszki 17", "44-100", "08:00-20:00", "32 238 25 10")
