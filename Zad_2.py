@@ -52,6 +52,7 @@ class Order:
         self.order_date = order_date
     def __str__(self):
         books_titles = ", ".join([f"{b.author_name} {b.author_surname}" for b in self.books])
+
         return ( f"Zamówienie(({self.order_date}),\n"
                  f"employee={self.employee},\n"
                  f"student={self.student},\n"
