@@ -4,9 +4,10 @@ def even_number(number: int) -> bool:
     else:
         return False
 
+
 if __name__ == "__main__":
     check = even_number(10)
-    if check == True:
+    if check is True:
         print("Liczba parzysta")
     else:
         print("Liczba nieparzysta")

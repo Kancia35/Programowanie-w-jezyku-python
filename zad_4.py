@@ -1,5 +1,6 @@
-def bigger(x: int,y: int,z: int) -> bool:
+def biggern(x: int, y: int, z: innt) -> bool:
     return (x + y) >= z
 
+
 if __name__ == "__main__":
-  print(bigger(3, 2, 1))
+    print(biggern(3, 2, 1))
