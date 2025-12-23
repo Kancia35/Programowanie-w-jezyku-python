@@ -5,6 +5,7 @@ class Property:
         self.price = price
         self.address = address
 
+
 class House(Property):
     def __init__(self, area, rooms: int, price, address, plot: int):
         super().__init__(area, rooms, price, address)
@@ -16,6 +17,7 @@ class House(Property):
                 f"  Rooms: {self.rooms}\n"
                 f"  Price: {self.price}\n"
                 f"  Plot size: {self.plot} m²")
+
 
 class Flat(Property):
     def __init__(self, area, rooms: int, price, address, floor: int):
