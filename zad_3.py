@@ -1,8 +1,5 @@
 def even_number(number: int) -> bool:
-    if number % 2 == 0:
-        return True
-    else:
-        return False
+    return number % 2 == 0
 
 
 if __name__ == "__main__":
